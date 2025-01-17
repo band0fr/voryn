@@ -144,17 +144,17 @@
             <h2>Our Gallery</h2>
             <div class="image-card">
                 <div class="card">
-                    <img src="/mnt/data/cleanman.png" alt="Purple Graffiti">
+                    <img src="cleanman.png" alt="Purple Graffiti">
                     <h3>Purple Graffiti</h3>
                     <p>A vibrant purple graffiti art style that stands out with its bold, modern aesthetic.</p>
                 </div>
                 <div class="card">
-                    <img src="/mnt/data/okkk.png" alt="Green Flask">
+                    <img src="okkk.png" alt="Green Flask">
                     <h3>Green Flask</h3>
                     <p>An iconic glowing flask representing creativity and experimentation.</p>
                 </div>
                 <div class="card">
-                    <img src="/mnt/data/savee.png" alt="Solaris">
+                    <img src="savee.png" alt="Solaris">
                     <h3>Solaris</h3>
                     <p>A radiant golden design symbolizing energy and warmth, encapsulating brilliance.</p>
                 </div>
@@ -166,14 +166,20 @@
         <p>&copy; 2025 Voryn. All rights reserved.</p>
     </footer>
 
+    <!-- Background Audio -->
+    <audio id="background-audio" autoplay loop>
+        <source src="C:/Users/jaden/Downloads/chillguy.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
     <script>
         // Loading screen functionality
         window.addEventListener("load", () => {
+            const loadingScreen = document.getElementById("loading-screen");
             setTimeout(() => {
-                const loadingScreen = document.getElementById("loading-screen");
                 loadingScreen.style.display = "none";
-            }, 3000); // 3 seconds
+            }, 3000);
         });
-    </script> 
+    </script>
 </body>
 </html>
